@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fafafa;
+}
+
+.chisono {
+  background: 57#fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 40px 28px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.competenze {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 40px 28px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.esperienze {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 40px 28px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.progetti {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 40px 28px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.contatti {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 40px 28px;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+.navbar ul {
+  color: rgb(248, 248, 248);
+  list-style-type: none;
+  padding: 0;
+}
+
+nav li:hover {
+  border-radius: 5%;
+  background-color: #cccbcb;
+}
+
+nav li {
+  text-align: center;
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.navbar {
+  text-align: center;
+}
+
+.everest {
+  border-radius: 50%;
+  float: left;
+  border: 5px solid rgb(218, 171, 45);
+}
+
+header {
+  background-image: url("../image/climber.jpg");
+  background-size: cover;
+  padding: 0;
+  background-position: center;
+  text-align: center;
+  line-height: 2.4;
+  padding: 60px 20px 40px;
+  border-bottom: 4px solid hsl(45, 90%, 60%);
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 0 2px 4px rgba(226, 17, 17, 0.2);
+}
+
+.navbar p {
+  color: #f44a4a;
+  padding-bottom: 5%;
+}
+
+h1 {
+  color: white;
+  padding-top: 10%;
+  margin: 0;
+}
+
+h2 {
+  color: #1f3d7a;
+}
+
+h2::before {
+  color: rgb(218, 171, 45);
+  font-size: 1.5em;
+  content: "-";
+}
+
+
+.testoCorsivo p {
+  font-style: italic;
+}
+
+.testoCorsivo::first-letter {
+  font-size: 2em;
+  color: #e77f0a;
+}
+
+section b {
+  color: #1f3d7a;
+}
+
+a:hover {
+  color: hsl(22, 30%, 93%);
+}
+nav,
+a {
+  color: hsl(41, 87%, 47%);
+}
+
+.competenze li:first-child {
+  font-weight: bold;
+}
+
+.competenze li:nth-child(odd) {
+  background-color: rgba(218, 227, 235, 0.4);
+}
+
+thead {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid;
+}
+
+.pagina-ricetta {
+  background-color: rgb(218, 227, 235);
+}
+
+input:focus {
+  color: #232323;
+}
+
+input,
+textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+label {
+  color: rgb(17, 102, 175);
+}
+
+button:hover {
+  color: hsl(45, 90%, 80%);
+  background-color: hsl(220, 60%, 45%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+button {
+  background-color: hsl(220, 60%, 30%);
+  font-weight: bold;
+  width: 30%;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+footer {
+  background-color: hsl(220, 40%, 15%);
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 2.4;
+  padding: 30px 20px;
+}
+
+footer p {
+  color: white;
+}
