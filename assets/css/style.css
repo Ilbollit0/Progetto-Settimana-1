@@ -24,6 +24,16 @@ body {
   max-width: 920px;
 }
 
+.carddettaglio {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 40px 28px;
+  margin: 20px auto;
+  max-width: 920px;
+}
+
 .esperienze {
   background: #fff;
   border: 1px solid #e5e7eb;
@@ -34,7 +44,7 @@ body {
   max-width: 920px;
 }
 
-.progetti span{
+.pagina-ricetta span{
   font-size: 1em;
   border-radius: 5px;
   background-color: red;
@@ -71,10 +81,8 @@ h3::first-letter {
   font-family: "Playfair Display";
 }
 
-.navbar ul {
-  color: rgb(248, 248, 248);
-  list-style-type: none;
-  padding: 0;
+td span{
+  color: #1f3d7a;
 }
 
 span {
@@ -87,10 +95,16 @@ nav li:hover {
 }
 
 nav li {
-  padding-right: 10px;
   text-align: center;
   display: inline-block;
   border-radius: 5px solid rgba(255, 255, 255, 0.3);
+}
+
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 10px;
 }
 
 .navbar {
@@ -107,24 +121,25 @@ nav li {
 header {
   background-image: url("/assets/images/header-bg.jpg");
   background-size: cover;
-  padding: 0;
   background-position: center;
   text-align: center;
   line-height: 2.4;
   padding: 60px 20px 40px;
   border-bottom: 4px solid hsl(45, 90%, 60%);
   font-weight: bold;
-
   font-style: italic;
   text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 }
 
 p {
+
   font-weight: 10;
 }
 
-.navbar p {
+header p {
   color: #f0e7c8;
+   margin: 0.4rem 0 1.6rem;
+  font-style: italic;
 }
 
 h1 {
@@ -242,7 +257,7 @@ td {
   display: block;
   height: 100%;
   background: #f2b90d;
-  border-radius: 99px;
+  border-radius: 100px;
 }
 
 .pagina-ricetta {
@@ -330,6 +345,32 @@ textarea {
 .social {
   display: inline;
   text-align: center;
-  gap: 0px;
+  gap: px;
   margin-bottom: 14px;
+}
+
+
+.dettaglio h2 {
+  font-size: 2rem;
+}
+
+code {
+  font-size: 0.9em;
+}
+
+.link-github {
+  font-weight: 600;
+}
+
+nav a,
+.header {
+  display: inline-block;
+  align-items: center;
+  padding: 8px 14px;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
 }
