@@ -75,9 +75,11 @@ body {
   max-width: 920px;
 }
 
-
-
-
+.testoCorsivo p::first-letter {
+  font-family: "Playfair Display", serif;
+  font-size: 2em;
+  color: #1f3d7a;
+}
 
  h3{
   font-family: "Playfair Display";
@@ -170,11 +172,6 @@ h2::before {
 
 .testoCorsivo p {
   font-style: italic;
-}
-
-.testoCorsivo::first-letter {
-  font-size: 2em;
-  color: #1f3d7a;
 }
 
 section b {
