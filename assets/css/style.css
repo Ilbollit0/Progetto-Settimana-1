@@ -75,15 +75,8 @@ body {
   max-width: 920px;
 }
 
-.contatti form p {
-  margin: 0 0 16px;
-}
-contatti label {
-  display: inline-block;
-  margin-bottom: 4px;
-  font-weight: 600;
-  color: #1f3d7a;
-}
+
+
 
 
 .testoCorsivo::first-letter {
@@ -299,46 +292,7 @@ td {
   border-left: 4px solid hsl(220, 60%, 30%);
 }
 
-input:focus {
-  color: hsl(220, 60%, 30%);
-}
 
-#motivo{
-  background-color:#fbf8f1;
-}
-
-input,
-textarea {
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-label {
-  color: rgb(11, 75, 131);
-}
-
-button:hover {
-  color: hsl(45, 90%, 80%);
-  background-color: hsl(220, 60%, 45%);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-button {
-  background-color: hsl(220, 60%, 30%);
-  font-weight: bold;
-  width: 30%;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  color: white;
-  cursor: pointer;
-}
-
-input{
-  background-color: #fbf8f1;
-}
 
 footer {
   background-color: hsl(220, 40%, 15%);
@@ -354,9 +308,6 @@ footer p {
  margin: 0;
 }
 
-textarea {
-  background-color: #fbf8f1;
-}
 
 .social {
   display: inline;
@@ -389,4 +340,71 @@ nav a,
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.08);
+}
+
+.material-symbols-outlined {
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.campo {
+  margin-bottom: 16px;
+}
+
+.contatti label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+  color: #1f3d7a;
+}
+
+.contatti input:not([type="checkbox"]),
+.contatti select,
+.contatti textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  font: inherit;
+  color: #2b2b2b;
+  background: #fbf8f1;
+  border: 1px solid #e0dbd0;
+  border-radius: 4px;
+}
+
+.contatti input:focus,
+.contatti select:focus,
+.contatti textarea:focus {
+  outline: 2px solid hsl(220, 60%, 45%);
+  outline-offset: 1px;
+}
+
+.contatti ::placeholder {
+  font-style: italic;
+  color: #a49c8c;
+}
+
+.contatti .consenso label {
+  display: inline;
+  font-weight: 400;
+  color: #2b2b2b;
+}
+
+.contatti button {
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  font: inherit;
+  font-weight: 700;
+  color: #fff;
+  background: hsl(220, 60%, 30%);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.contatti button:hover {
+  color: hsl(45, 90%, 80%);
+  background: hsl(220, 60%, 45%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
