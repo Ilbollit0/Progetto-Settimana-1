@@ -4,6 +4,8 @@ body {
   background: #f4f1ec;
 }
 
+
+
 .chisono {
   background: #f8f8f8;
   border: 1px solid #e5e7eb;
@@ -11,6 +13,7 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   padding: 40px 28px;
   margin: 20px auto;
+  margin-top: -15px;;
   max-width: 920px;
 }
 
@@ -269,10 +272,16 @@ td {
 .pagina-ricetta {
   background-color: #f9f5ea;
   padding: 16px 20px;
-  margin-top: 16px;
+  margin-top: -15px;
   border-radius: 4px;
   border-left: 4px solid hsl(220, 60%, 30%);
 }
+
+.carddettaglio{
+  margin-top: -15px;
+}
+
+
 
 .curriculum {
   background-color: rgb(252, 251, 251);
