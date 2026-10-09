@@ -233,6 +233,10 @@ input:focus {
   color: hsl(220, 60%, 30%);
 }
 
+#motivo{
+  color:#fbf8f1;
+}
+
 input,
 textarea {
   width: 100%;
