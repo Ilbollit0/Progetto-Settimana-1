@@ -415,3 +415,7 @@ nav a,
   background: hsl(220, 60%, 45%);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
+
+.material-symbols-outlined{
+  color: white;
+}
