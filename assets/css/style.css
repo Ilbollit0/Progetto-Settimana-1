@@ -34,6 +34,13 @@ body {
   max-width: 920px;
 }
 
+.progetti span{
+  font-size: 1em;
+  border-radius: 5px;
+  background-color: red;
+  color:rgb(249, 247, 247)
+}
+
 .progetti {
   background: #fff;
   border: 1px solid #e5e7eb;
@@ -160,6 +167,7 @@ a {
 }
 
 .titolino {
+   margin: 1rem 0 0.6rem;
   font-style: italic;
   color: #8492ad;
 }
@@ -189,6 +197,7 @@ table {
   text-align: left;
   border-color: #ece6d8;
    border-bottom: 1px solid;
+    border-collapse: collapse;
 }
 
 tbody{
@@ -196,13 +205,44 @@ tbody{
 }
 
 th {
+  padding: 10px 12px;
   color: hsl(220, 60%, 25%);
+  background: #f9f5ea;
 
 }
 
 td {
   font-weight: 1;
+  padding: 12px;
+  border-bottom: 1px solid #ece6d8;
+  vertical-align: middle;
 
+
+}
+
+.tech{
+  width: 50%;
+}
+
+.tech small {
+  display: block;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #8492ad;
+}
+
+.barra {
+  height: 8px;
+  background: #ece6d8;
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.barra span {
+  display: block;
+  height: 100%;
+  background: #f2b90d;
+  border-radius: 99px;
 }
 
 .pagina-ricetta {
@@ -234,7 +274,7 @@ input:focus {
 }
 
 #motivo{
-  color:#fbf8f1;
+  background-color:#fbf8f1;
 }
 
 input,
@@ -271,17 +311,25 @@ input{
 
 footer {
   background-color: hsl(220, 40%, 15%);
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   font-size: 0.9rem;
   line-height: 2.4;
   padding: 30px 20px;
+  margin-top: 50px;
 }
 
 footer p {
-  color: white;
+ margin: 0;
 }
 
 textarea {
   background-color: #fbf8f1;
+}
+
+.social {
+  display: inline;
+  text-align: center;
+  gap: 0px;
+  margin-bottom: 14px;
 }
