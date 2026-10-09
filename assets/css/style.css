@@ -1,19 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
 body {
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   line-height: 1.6;
-  background-color: #fafafa;
+  background: #f4f1ec;
 }
 
 .chisono {
-  background: 57#fff;
+  background: #f8f8f8;
   border: 1px solid #e5e7eb;
   border-radius: 5px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   padding: 40px 28px;
   margin: 20px auto;
-  max-width: 800px;
+  max-width: 920px;
 }
 
 .competenze {
@@ -23,7 +21,7 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   padding: 40px 28px;
   margin: 20px auto;
-  max-width: 800px;
+  max-width: 920px;
 }
 
 .esperienze {
@@ -33,7 +31,7 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   padding: 40px 28px;
   margin: 20px auto;
-  max-width: 900px;
+  max-width: 920px;
 }
 
 .progetti {
@@ -43,7 +41,7 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   padding: 40px 28px;
   margin: 20px auto;
-  max-width: 900px;
+  max-width: 920px;
 }
 
 .contatti {
@@ -53,7 +51,17 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   padding: 40px 28px;
   margin: 20px auto;
-  max-width: 900px;
+  max-width: 920px;
+}
+
+.testoCorsivo::first-letter {
+  font-family: "Playfair Display";
+}
+
+h1,
+h2,
+h3::first-letter {
+  font-family: "Playfair Display";
 }
 
 .navbar ul {
@@ -62,29 +70,35 @@ body {
   padding: 0;
 }
 
+span {
+  text-align: center;
+}
+
 nav li:hover {
   border-radius: 5%;
   background-color: #cccbcb;
 }
 
 nav li {
+  padding-right: 10px;
   text-align: center;
   display: inline-block;
-  padding-right: 15px;
+  border-radius: 5px solid rgba(255, 255, 255, 0.3);
 }
 
 .navbar {
   text-align: center;
+  border-left: 5px;
 }
 
-.everest {
+.fotoprofilo {
   border-radius: 50%;
   float: left;
   border: 5px solid rgb(218, 171, 45);
 }
 
 header {
-  background-image: url("images/climber.jpg");
+  background-image: url("/assets/images/header-bg.jpg");
   background-size: cover;
   padding: 0;
   background-position: center;
@@ -93,19 +107,24 @@ header {
   padding: 60px 20px 40px;
   border-bottom: 4px solid hsl(45, 90%, 60%);
   font-weight: bold;
+
   font-style: italic;
-  text-shadow: 0 2px 4px rgba(226, 17, 17, 0.2);
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+p {
+  font-weight: 10;
 }
 
 .navbar p {
-  color: #f44a4a;
-  padding-bottom: 5%;
+  color: #f0e7c8;
 }
 
 h1 {
   color: white;
   padding-top: 10%;
   margin: 0;
+  font-size: 5em;
 }
 
 h2 {
@@ -115,9 +134,8 @@ h2 {
 h2::before {
   color: rgb(218, 171, 45);
   font-size: 1.5em;
-  content: "-";
+  content: "\2756";
 }
-
 
 .testoCorsivo p {
   font-style: italic;
@@ -125,11 +143,12 @@ h2::before {
 
 .testoCorsivo::first-letter {
   font-size: 2em;
-  color: #e77f0a;
+  color: #1f3d7a;
 }
 
 section b {
   color: #1f3d7a;
+  border-radius: 1px solid #e6e0d3;
 }
 
 a:hover {
@@ -140,12 +159,25 @@ a {
   color: hsl(41, 87%, 47%);
 }
 
-.competenze li:first-child {
-  font-weight: bold;
+.titolino {
+  font-style: italic;
+  color: #8492ad;
 }
 
-.competenze li:nth-child(odd) {
+.intro {
+  font-family: "inter", Courier, monospace;
+  font-style: normal;
+  color: rgb(11, 75, 131);
+  background-color: hsla(45, 78%, 86%, 0.787);
+}
+
+.competenze li:first-child {
   background-color: rgba(218, 227, 235, 0.4);
+}
+
+.competenze ul,
+li {
+  list-style-type: none;
 }
 
 thead {
@@ -153,21 +185,52 @@ thead {
 }
 
 table {
-  border-collapse: collapse;
   width: 100%;
+  text-align: left;
+  border-color: #ece6d8;
+   border-bottom: 1px solid;
 }
 
-th,
+tbody{
+  background-color: white;
+}
+
+th {
+  color: hsl(220, 60%, 25%);
+
+}
+
 td {
-  border: 1px solid;
+  font-weight: 1;
+
 }
 
 .pagina-ricetta {
-  background-color: rgb(218, 227, 235);
+  background-color: #f9f5ea;
+  padding: 16px 20px;
+  margin-top: 16px;
+  border-radius: 4px;
+  border-left: 4px solid hsl(220, 60%, 30%);
+}
+
+.curriculum {
+  background-color: rgb(252, 251, 251);
+  padding: 16px 20px;
+  margin-top: 16px;
+  border-radius: 4px;
+  border-left: 4px solid #f2b90d;
+}
+
+.portfolio {
+  background-color: #f9f5ea;
+  padding: 16px 20px;
+  margin-top: 16px;
+  border-radius: 4px;
+  border-left: 4px solid hsl(220, 60%, 30%);
 }
 
 input:focus {
-  color: #232323;
+  color: hsl(220, 60%, 30%);
 }
 
 input,
@@ -178,7 +241,7 @@ textarea {
 }
 
 label {
-  color: rgb(17, 102, 175);
+  color: rgb(11, 75, 131);
 }
 
 button:hover {
@@ -198,6 +261,10 @@ button {
   color: white;
 }
 
+input{
+  background-color: #fbf8f1;
+}
+
 footer {
   background-color: hsl(220, 40%, 15%);
   color: #ffffff;
@@ -209,4 +276,8 @@ footer {
 
 footer p {
   color: white;
+}
+
+textarea {
+  background-color: #fbf8f1;
 }
