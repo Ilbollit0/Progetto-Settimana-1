@@ -75,6 +75,17 @@ body {
   max-width: 920px;
 }
 
+.contatti form p {
+  margin: 0 0 16px;
+}
+contatti label {
+  display: inline-block;
+  margin-bottom: 4px;
+  font-weight: 600;
+  color: #1f3d7a;
+}
+
+
 .testoCorsivo::first-letter {
   font-family: "Playfair Display";
 }
@@ -322,6 +333,7 @@ button {
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: white;
+  cursor: pointer;
 }
 
 input{

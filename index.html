@@ -159,13 +159,15 @@
                             contenuto
                             reale.
                         </p>
-                        <a href="https://github.com/Ilbollit0?tab=repositories"><span class="material-symbols-outlined">code</span> <b>Vedi su GitHub</b></a>
+                        <a href="https://github.com/Ilbollit0?tab=repositories"><span
+                                class="material-symbols-outlined">code</span> <b>Vedi su GitHub</b></a>
                     </section>
 
                     <section class="curriculum">
                         <h3> Card di presentazione </h3>
                         <p> un biglietto digitale, ruolo e link ai social. Esercizio di sintesi sulla struttura HTML</p>
-                        <a href="https://github.com/Ilbollit0"><span class="material-symbols-outlined">code</span> <b>Vedi su GitHub</b></a>
+                        <a href="https://github.com/Ilbollit0"><span class="material-symbols-outlined">code</span>
+                            <b>Vedi su GitHub</b></a>
                     </section>
                     <section class="portfolio">
                         <h3>Porfolio personale</h3>
@@ -173,7 +175,8 @@
                             fino
                             alla pubblicazione su GitHub Pages
                         </p>
-                        <a href="https://github.com/Ilbollit0?tab=repositories"><span class="material-symbols-outlined">code</span> <b>Vedi su GitHub</b></a>
+                        <a href="https://github.com/Ilbollit0?tab=repositories"><span
+                                class="material-symbols-outlined">code</span> <b>Vedi su GitHub</b></a>
                     </section>
                     <p class="tutti"><a href="progetti.html"><span
                                 class="material-symbols-outlined">arrow_forward</span> Tutti i progetti in dettaglio</a>
@@ -181,68 +184,62 @@
 
             </div>
 
-            <div class="contatti">
-                <section id="contatti">
-                    <h2>Contattami</h2>
-                    <p>Compila il form per scrivermi. Ti rispondo entro 24 ore.</p>
+            <section class="card contatti" id="contatti">
+                <h2>Contattami</h2>
+                <p>Compila il form per scrivermi. Ti rispondo entro 24 ore.</p>
 
-                    <form action="#" method="POST">
+                <form action="#" method="POST">
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required>
+                    </div>
 
-                        <p>
-                            <label for="nome">Nome</label><br>
-                            <input type="text" id="nome" name="nome" class="focus" placeholder="Il tuo nome" required>
-                        </p>
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="tu@esempio.it" required>
+                    </div>
 
-                        <p>
-                            <label for="email">Email</label><br>
-                            <input type="email" id="email" name="email" class="focus" placeholder="tu@esempio.it"
-                                required>
-                        </p>
+                    <div class="campo">
+                        <label for="motivo">Motivo del contatto</label>
+                        <select id="motivo" name="motivo">
+                            <option value="lavoro">Proposta di lavoro</option>
+                            <option value="collaborazione">Collaborazione su un progetto</option>
+                            <option value="info">Richiesta di informazioni</option>
+                            <option value="altro">Altro</option>
+                        </select>
+                    </div>
 
-                        <p>
-                            <label for="motivo">Motivo del contatto</label><br>
-                            <select id="motivo" name="motivo" class="focus">
-                                <option value="lavoro">Proposta di lavoro</option>
-                                <option value="collaborazione">Collaborazione su un progetto</option>
-                                <option value="info">Richiesta di informazioni</option>
-                                <option value="altro">Altro</option>
-                            </select>
-                        </p>
+                    <div class="campo">
+                        <label for="data">Data preferita per la risposta</label>
+                        <input type="date" id="data" name="data">
+                    </div>
 
-                        <p>
-                            <label for="data">Data preferita per la risposta</label><br>
-                            <input type="date" id="data" name="data" class="focus">
-                        </p>
+                    <div class="campo">
+                        <label for="messaggio">Messaggio</label>
+                        <textarea id="messaggio" name="messaggio" rows="5" placeholder="Scrivi qui il tuo messaggio..."
+                            required></textarea>
+                    </div>
 
-                        <p>
-                            <label for="messaggio">Messaggio</label><br>
-                            <textarea id="messaggio" name="messaggio" class="focus" rows="5"
-                                placeholder="Scrivi qui il tuo messaggio..." required></textarea>
-                        </p>
+                    <div class="campo consenso">
+                        <input type="checkbox" id="consenso" name="consenso" required>
+                        <label for="consenso">Accetto di essere ricontattato all'indirizzo indicato</label>
+                    </div>
 
-                        <p>
-                            <input type="checkbox" id="consenso" name="consenso" required>
-                            <label for="consenso">Accetto di essere ricontattato all'indirizzo indicato</label>
-                        </p>
-                        <p>
-                            <button type="submit"><span class="material-symbols-outlined">send</span>Invia</button>
-                        </p>
-
-                    </form>
-                </section>
-            </div>
+                    <button type="submit"><span class="material-symbols-outlined">send</span> Invia</button>
+                </form>
+            </section>
     </main>
+
     <footer>
         <div class="social">
             <a href="https://github.com/Ilbollit0" target="_blank" rel="noopener" aria-label="GitHub"><span
                     class="material-symbols-outlined">code</span></a>
-            <a href="https://www.linkedin.com/in/gabriel-bollati-2a4904312/?isSelfProfile=true"
-                aria-label="LinkedIn"><span class="material-symbols-outlined">business_center</span></a>
+            <a href="https://www.linkedin.com/in/gabriel-bollati-2a4904312/?isSelfProfile=true" target="_blank"
+                rel="noopener" aria-label="LinkedIn"><span class="material-symbols-outlined">business_center</span></a>
             <a href="#contatti" aria-label="Email"><span class="material-symbols-outlined">mail</span></a>
             <a href="#" aria-label="Sito web"><span class="material-symbols-outlined">language</span></a>
         </div>
         <p>&copy; 2026 Gabriel Bollati — Costruito a mano durante la prima settimana del corso Epicode</p>
-    </footer>
     </footer>
 </body>
 
