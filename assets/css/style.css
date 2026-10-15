@@ -4,78 +4,46 @@ body {
   background: #f4f1ec;
 }
 
-
+.chisono,
+.competenze,
+.carddettaglio,
+.esperienze,
+.progetti,
+.contatti {
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 40px 28px;
+  margin: 20px auto;
+  max-width: 920px;
+}
 
 .chisono {
   background: #f8f8f8;
-  border: 1px solid #e5e7eb;
-  border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  padding: 40px 28px;
-  margin: 20px auto;
-  margin-top: -15px;;
-  max-width: 920px;
+  margin-top: -15px;
 }
 
-.competenze {
+.competenze,
+.carddettaglio,
+.esperienze,
+.progetti,
+.contatti {
   background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  padding: 40px 28px;
-  margin: 20px auto;
-  max-width: 920px;
 }
 
 .carddettaglio {
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  padding: 40px 28px;
-  margin: 20px auto;
-  max-width: 920px;
+  margin-top: -15px;
 }
 
-.esperienze {
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  padding: 40px 28px;
-  margin: 20px auto;
-  max-width: 920px;
-}
-
-.tutti{
+.tutti {
   text-align: right;
 }
 
-.badge{
+.badge {
   font-size: 1em;
   border-radius: 5px;
   background-color: red;
-  color:rgb(249, 247, 247)
-}
-
-.progetti {
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  padding: 40px 28px;
-  margin: 20px auto;
-  max-width: 920px;
-}
-
-.contatti {
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  padding: 40px 28px;
-  margin: 20px auto;
-  max-width: 920px;
+  color: rgb(249, 247, 247);
 }
 
 .testoCorsivo p::first-letter {
@@ -84,23 +52,18 @@ body {
   color: #1f3d7a;
 }
 
- h3{
-  font-family: "Playfair Display";
-  color:#1F3D7A
-}
-
 h1,
 h2,
-h3::first-letter {
+h3 {
   font-family: "Playfair Display";
 }
 
-td span{
+h3 {
   color: #1f3d7a;
 }
 
-span {
-  text-align: center
+td span {
+  color: #1f3d7a;
 }
 
 nav li:hover {
@@ -111,10 +74,13 @@ nav li:hover {
 nav li {
   text-align: center;
   display: inline-block;
-  border-radius: 5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
 }
 
-nav ul{
+nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -133,7 +99,7 @@ nav ul{
 }
 
 header {
-  background-image: url("/assets/images/header-bg.jpg");
+  background-image: url("../images/header-bg.jpg");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -146,13 +112,12 @@ header {
 }
 
 p {
-
-  font-weight: 10;
+  font-weight: 400;
 }
 
 header p {
   color: #f0e7c8;
-   margin: 0.4rem 0 1.6rem;
+  margin: 0.4rem 0 1.6rem;
   font-style: italic;
 }
 
@@ -179,7 +144,7 @@ h2::before {
 
 section b {
   color: #1f3d7a;
-  border-radius: 1px solid #e6e0d3;
+  border-radius: 1px;
 }
 
 a:hover {
@@ -191,7 +156,7 @@ a {
 }
 
 .titolino {
-   margin: 1rem 0 0.6rem;
+  margin: 1rem 0 0.6rem;
   font-style: italic;
   color: #8492ad;
 }
@@ -207,8 +172,7 @@ a {
   background-color: rgba(218, 227, 235, 0.4);
 }
 
-.competenze ul,
-li {
+.competenze li {
   list-style-type: none;
 }
 
@@ -220,11 +184,11 @@ table {
   width: 100%;
   text-align: left;
   border-color: #ece6d8;
-   border-bottom: 1px solid;
-    border-collapse: collapse;
+  border-bottom: 1px solid;
+  border-collapse: collapse;
 }
 
-tbody{
+tbody {
   background-color: white;
 }
 
@@ -232,19 +196,16 @@ th {
   padding: 10px 12px;
   color: hsl(220, 60%, 25%);
   background: #f9f5ea;
-
 }
 
 td {
-  font-weight: 1;
+  font-weight: 400;
   padding: 12px;
   border-bottom: 1px solid #ece6d8;
   vertical-align: middle;
-
-
 }
 
-.tech{
+.tech {
   width: 50%;
 }
 
@@ -277,12 +238,6 @@ td {
   border-left: 4px solid hsl(220, 60%, 30%);
 }
 
-.carddettaglio{
-  margin-top: -15px;
-}
-
-
-
 .curriculum {
   background-color: rgb(252, 251, 251);
   padding: 16px 20px;
@@ -299,8 +254,6 @@ td {
   border-left: 4px solid hsl(220, 60%, 30%);
 }
 
-
-
 footer {
   background-color: hsl(220, 40%, 15%);
   color: #fff;
@@ -312,17 +265,16 @@ footer {
 }
 
 footer p {
- margin: 0;
+  margin: 0;
 }
-
 
 .social {
-  display: inline;
+  display: flex;
+  justify-content: center;
   text-align: center;
-  gap: px;
+  gap: 12px;
   margin-bottom: 14px;
 }
-
 
 .dettaglio h2 {
   font-size: 2rem;
@@ -352,6 +304,7 @@ nav a,
 .material-symbols-outlined {
   font-size: 18px;
   vertical-align: middle;
+  color: #fff;
 }
 
 .campo {
@@ -397,6 +350,7 @@ nav a,
 }
 
 .contatti button {
+  display: inline-flex;
   align-items: center;
   gap: 8px;
   padding: 12px 24px;
@@ -414,8 +368,4 @@ nav a,
   color: hsl(45, 90%, 80%);
   background: hsl(220, 60%, 45%);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.material-symbols-outlined{
-  color: white;
 }
